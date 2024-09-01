@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Креативни хаос</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(45deg, #ff6f61, #ffcc80);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        nav {
+            background-color: #ff6f61;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+        h1, h2 {
+            color: #ff6f61;
+        }
+        .dropdown {
+            margin: 20px 0;
+        }
+        .dropdown select {
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #ff6f61;
+            border-radius: 4px;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #ff6f61;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #ff6f61;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .contact-form button:hover {
+            background-color: #ffcc80;
+        }
+        footer {
+            background-color: #ff6f61;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Креативни хаос
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">О мени</a></li>
+            <li><a href="#services">Услуге</a></li>
+            <li><a href="#contact">Контакт</a></li>
+        </ul>
+    </nav>
+    <div class="container" id="about">
+        <h2>О мени</h2>
+        <p>Здраво! Моје име је <strong>Сандра</strong> и имам 23 године. Студент сам четврте године геоинформатике на Природно-математичком факултету у Новом Саду.</p>
+        <p>Бавим се превођењем са/на грчки, енглески и немачки језик. Разумем се у GIS и обраду података, а такође поседујем вештине дизајна и дигиталног маркетинга.</p>
+    </div>
+    <div class="container" id="services">
+        <h2>Услуге</h2>
+        <div class="dropdown">
+            <label for="service">Изаберите услугу:</label>
+            <select id="service">
+                <option value="translation">Превођење</option>
+                <option value="marketing">Дигитални маркетинг</option>
+                <option value="design">Дизајн</option>
+                <option value="gis">GIS</option>
+            </select>
+        </div>
+    </div>
+    <div class="container" id="contact">
+        <h2>Контакт</h2>
+        <p>Ако желите да ступите у контакт са мном, можете попунити форму испод:</p>
+        <form class="contact-form" action="mailto:sandra.22.mih@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Ваше име" required>
+            <input type="email" name="email" placeholder="Ваше имејл адресу" required>
+            <textarea name="message" rows="5" placeholder="Ваша порука" required></textarea>
+            <button type="submit">Пошаљите</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Сандра. Сва права задржана.</p>
+    </footer>
+</body>
+</html>
